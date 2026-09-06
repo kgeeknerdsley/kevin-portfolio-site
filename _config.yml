@@ -46,7 +46,7 @@ include:
 author:
   name   : "Kevin Worsley"
   avatar : "assets/images/headshot.jpg"
-  bio    : "I'm an embedded software and hardware engineer, with a particular interest in the design and execution of interactive systems. \n Have a look at what I've been up to!"
+  bio    : "I'm an embedded software and hardware engineer, with a particular interest in the design and execution of interactive systems. <br><br> Have a look at what I've been up to!"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -83,6 +83,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 category_archive:
   type: liquid
@@ -90,6 +98,11 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
