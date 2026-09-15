@@ -9,7 +9,7 @@ author_profile: true
 Welcome to my collection of projects! I'm very proud of my role in each and every one.
 
 
-Projects I've contributed to professionally is in the first carousel, followed by my university projects, then some interesting things I tinker with in my own time.
+Projects are sorted by my Professional experience, University projects, and some Personal projects I tinker with in my spare time.
 
 <h2 id="professional">Professional</h2>
 <div class="grid__wrapper">
