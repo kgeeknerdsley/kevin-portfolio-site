@@ -55,6 +55,9 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/kevindworsley/"
 
+atom_feed:
+  hide: true  # removes the RSS "Feed" link from the footer
+
 footer:
   links:
     - label: "GitHub"
