@@ -19,9 +19,11 @@ gallery:
 ---
 
 ## Overview
-The Atomic Odyssey Interactives are part of the [National Atomic Testing Museum's Atomic Odyssey](https://www.atomicmuseum.vegas/exhibits-and-collections/) exhibit in Santa Ana, CA. I worked on this as the Lead Embedded Systems Engineer at [Beaudry Interactive](https://www.binteractive.com/post/atomic-odyssey).
+The Atomic Odyssey Interactives are part of the [National Atomic Testing Museum's Atomic Odyssey](https://www.atomicmuseum.vegas/exhibits-and-collections/) exhibit in Las Vegas, NV. I worked on this as the Lead Embedded Systems Engineer at [Beaudry Interactive](https://www.binteractive.com/post/atomic-odyssey).
 
 Guests engage with multiple interactive stations, each designed to teach a different aspect of atomic science. I was responsible for the design and implementation of the embedded systems that drive all sensor components, from buttons and switches, pinball movement, to LED lighting.
+
+
 
 ## Photos
 {% include gallery caption="Photos of the Atomic Odyssey interactives." %}
@@ -33,6 +35,7 @@ Guests engage with multiple interactive stations, each designed to teach a diffe
     - Buttons and LED strip lighting for Fusion interactive
 - Firmware developed for all listed interactives
 - Custom PCBs designed and assembled for all listed interactives
+- Enclosure design in Fusion, and 3D print
 - Installation and post-opening support
 
 ## Credits

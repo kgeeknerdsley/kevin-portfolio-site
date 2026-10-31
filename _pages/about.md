@@ -1,7 +1,22 @@
 ---
-permalink: /about/
-title: "About"
+permalink: /
+title: "Welcome!"
+carousel:
+  - image_path: /assets/images/atomic-bi/teaser.png
+    caption: "Atomic Odyssey Interactives"
+    url: /projects/atomic-bi/
+  - image_path: /assets/images/dinoquest-bi/teaser.png
+    caption: "Dino Tracker"
+    url: /projects/dinoquest-bi/
+  - image_path: /assets/images/golf-bi/teaser.png
+    caption: "Augmented Putting"
+    url: /projects/golf-bi/
+  - image_path: /assets/images/uuv-cpp/teaser.png
+    caption: "NGCP Unmanned Underwater Vehicle"
+    url: /projects/uuv-cpp/
 ---
+
+{% include carousel.html %}
 
 Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
 

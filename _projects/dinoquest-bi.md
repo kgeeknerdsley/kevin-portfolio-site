@@ -23,6 +23,8 @@ The Dino Tracker is part of the [Discovery Cube of Orange County's Dino Quest](h
 
 Guests use the Dino Tracker to explore four interactive missions throughout the outdoor exhibit space. The device features a clear three-button interface, haptic feedback, and an RFID system that allows it to "scan" various graphic panels, as well as communicate wirelessly with the back-of-house game systems and show control.
 
+We produced 200 trackers for this exhibit!
+
 ## Photos
 {% include gallery caption="Photos of the Dino Tracker." %}
 

@@ -1,0 +1,91 @@
+{% comment %}
+  Image carousel.
+  Usage: {% include carousel.html %}            -> uses page.carousel
+         {% include carousel.html id="x" items=page.other_list %}
+  Each item: image_path (required), alt, caption, url (optional link)
+{% endcomment %}
+{% assign carousel_items = include.items | default: page.carousel %}
+{% assign carousel_id = include.id | default: "carousel" %}
+
+{% if carousel_items and carousel_items.size > 0 %}
+<div class="carousel" id="{{ carousel_id }}" role="region" aria-roledescription="carousel" aria-label="Image carousel" tabindex="0">
+  <div class="carousel__track">
+    {% for item in carousel_items %}
+    <figure class="carousel__slide{% if forloop.first %} is-active{% endif %}" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ carousel_items.size }}">
+      {% if item.url %}<a href="{{ item.url | relative_url }}">{% endif %}
+      <img src="{{ item.image_path | relative_url }}" alt="{{ item.alt | default: item.caption | escape }}"{% unless forloop.first %} loading="lazy"{% endunless %}>
+      {% if item.url %}</a>{% endif %}
+      {% if item.caption %}<figcaption>{{ item.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+
+  {% if carousel_items.size > 1 %}
+  <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Previous image">&#10094;</button>
+  <button class="carousel__btn carousel__btn--next" type="button" aria-label="Next image">&#10095;</button>
+  <div class="carousel__dots">
+    {% for item in carousel_items %}
+    <button type="button" class="carousel__dot{% if forloop.first %} is-active{% endif %}" aria-label="Show image {{ forloop.index }}"></button>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<style>
+  .carousel { position: relative; margin: 1.5em 0 2em; outline: none; }
+  .carousel__track { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 6px; background: #f2f3f3; }
+  .carousel__slide { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; transition: opacity .5s ease, visibility .5s; }
+  .carousel__slide.is-active { opacity: 1; visibility: visible; }
+  .carousel__slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .carousel__slide figcaption { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: .6em 1em; color: #fff; font-size: .8em; text-align: left; background: linear-gradient(transparent, rgba(0,0,0,.7)); }
+  .carousel__slide figcaption a { color: #fff; }
+  .carousel__btn { position: absolute; top: 50%; transform: translateY(-50%); width: 2.2em; height: 2.2em; margin: 0; padding: 0; border: 0; border-radius: 50%; color: #fff; background: rgba(0,0,0,.45); cursor: pointer; font-size: 1em; line-height: 2.2em; }
+  .carousel__btn:hover, .carousel__btn:focus-visible { background: rgba(0,0,0,.7); }
+  .carousel__btn--prev { left: .6em; }
+  .carousel__btn--next { right: .6em; }
+  .carousel__dots { display: flex; justify-content: center; gap: .5em; margin-top: .6em; }
+  .carousel__dot { width: .7em; height: .7em; margin: 0; padding: 0; border: 0; border-radius: 50%; background: #bdc1c4; cursor: pointer; }
+  .carousel__dot.is-active { background: #494e52; }
+</style>
+
+<script>
+  (function () {
+    var root = document.getElementById("{{ carousel_id }}");
+    if (!root) return;
+    var slides = root.querySelectorAll(".carousel__slide");
+    var dots = root.querySelectorAll(".carousel__dot");
+    if (slides.length < 2) return;
+    var current = 0, timer = null, delay = 5000;
+
+    function show(i) {
+      current = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) { s.classList.toggle("is-active", n === current); });
+      dots.forEach(function (d, n) { d.classList.toggle("is-active", n === current); });
+    }
+    function restart() { clearInterval(timer); timer = setInterval(function () { show(current + 1); }, delay); }
+
+    root.querySelector(".carousel__btn--prev").addEventListener("click", function () { show(current - 1); restart(); });
+    root.querySelector(".carousel__btn--next").addEventListener("click", function () { show(current + 1); restart(); });
+    dots.forEach(function (d, n) { d.addEventListener("click", function () { show(n); restart(); }); });
+    root.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") { show(current - 1); restart(); }
+      if (e.key === "ArrowRight") { show(current + 1); restart(); }
+    });
+
+    // Swipe on touch screens
+    var startX = null;
+    root.addEventListener("touchstart", function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    root.addEventListener("touchend", function (e) {
+      if (startX === null) return;
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) { show(current + (dx < 0 ? 1 : -1)); restart(); }
+      startX = null;
+    });
+
+    // Pause while hovered, and never auto-advance for reduced-motion users
+    root.addEventListener("mouseenter", function () { clearInterval(timer); });
+    root.addEventListener("mouseleave", restart);
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) restart();
+  })();
+</script>
+{% endif %}
