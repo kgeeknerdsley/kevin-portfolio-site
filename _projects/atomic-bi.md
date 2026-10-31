@@ -2,6 +2,7 @@
 title: "Atomic Odyssey Interactives"
 excerpt: "A variety of interactives dedicated to making atomic science engaging."
 project_type: professional 
+order: 2
 header:
   teaser: /assets/images/atomic-bi/teaser.png
   overlay_image: /assets/images/atomic-bi/overlay.png

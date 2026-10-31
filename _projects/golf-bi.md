@@ -2,6 +2,7 @@
 title: "Augmented Putting"
 excerpt: "Complex computer vision project to track golf balls on a digitally augmented putting green"
 project_type: professional 
+order: 4
 header:
   teaser: /assets/images/golf-bi/teaser.png
   overlay_image: /assets/images/golf-bi/overlay.png

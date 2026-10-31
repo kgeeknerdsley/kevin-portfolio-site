@@ -2,6 +2,7 @@
 title: "NGCP Unmanned Underwater Vehicle"
 excerpt: "An autonomous underwater vehicle with optical navigation."
 project_type: college 
+order: 1
 header:
   teaser: /assets/images/uuv-cpp/teaser.png
   overlay_image: /assets/images/uuv-cpp/overlay.png

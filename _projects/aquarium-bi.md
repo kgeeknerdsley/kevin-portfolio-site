@@ -2,6 +2,7 @@
 title: "Virtual Aquarium Interactives"
 excerpt: "Multiple computer vision interactive components, for fish drawings and playful lighting"
 project_type: professional 
+order: 1
 header:
   teaser: /assets/images/aquarium-bi/teaser.png
   overlay_image: /assets/images/aquarium-bi/overlay.png

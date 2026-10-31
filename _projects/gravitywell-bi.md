@@ -2,6 +2,7 @@
 title: "Gravity Well"
 excerpt: "A computer vision tracking system tracing balls around a funnel"
 project_type: professional 
+order: 5
 header:
   teaser: /assets/images/gravitywell-bi/teaser.png
   overlay_image: /assets/images/gravitywell-bi/overlay.png
@@ -23,6 +24,8 @@ The Gravity Well is part of the [The Franklin Institute's Wondrous Space](https:
 
 Guests approach the Gravity Well and roll a ball into the funnel, in order to show a visual representation of how gravity affects objects in its sphere of influence. The computer vision system is tracking all balls present on the funnel, passing positional data to the game system for visual display. Each ball's position is tracked with a persistent identifier, as well as detecting and handling collisions between balls.
 
+A great video recorded by Beaudry Interactive [linked here](https://vimeo.com/884843294?fl=pl&fe=vl).
+
 ## Photos
 {% include gallery caption="Photos of the Gravity Well." %}
 
@@ -33,4 +36,4 @@ Guests approach the Gravity Well and roll a ball into the funnel, in order to sh
 - Installation and post-opening support
 
 ## Credits
-More about the full project on [Beaudry Interactive's website](https://www.binteractive.com/post/dino-quest-re-imagined).
+More about the full project on [Beaudry Interactive's website](https://www.binteractive.com/post/wondrous-space).

@@ -2,20 +2,21 @@
 title: "Engineers without Borders Water Safety Sensor"
 excerpt: "Project lead for a water filtration safety monitoring sensor."
 project_type: college 
-header:
-  teaser: /assets/images/ewb-cpp/teaser.png
-  overlay_image: /assets/images/ewb-cpp/overlay.png
-  overlay_filter: 0.3
-gallery:
-  - url: /assets/images/ewb-cpp/photo1.png
-    image_path: /assets/images/ewb-cpp/photo1.png
-    alt: "photo 1"
-  - url: /assets/images/ewb-cpp/photo2.png
-    image_path: /assets/images/ewb-cpp/photo2.png
-    alt: "photo 2"
-  - url: /assets/images/ewb-cpp/photo3.png
-    image_path: /assets/images/ewb-cpp/photo3.png
-    alt: "photo 3"
+order: 3
+# header:
+#   teaser: /assets/images/ewb-cpp/teaser.png
+#   overlay_image: /assets/images/ewb-cpp/overlay.png
+#   overlay_filter: 0.3
+# gallery:
+#   - url: /assets/images/ewb-cpp/photo1.png
+#     image_path: /assets/images/ewb-cpp/photo1.png
+#     alt: "photo 1"
+#   - url: /assets/images/ewb-cpp/photo2.png
+#     image_path: /assets/images/ewb-cpp/photo2.png
+#     alt: "photo 2"
+#   - url: /assets/images/ewb-cpp/photo3.png
+#     image_path: /assets/images/ewb-cpp/photo3.png
+#     alt: "photo 3"
 ---
 
 ## Overview
@@ -28,8 +29,8 @@ I was responsible for designing the system, selecting the microcontroller and co
 I also managed a team of four, mentoring and instructing non-ECE students as well as delegating work based on interests and strengths.
 
 
-## Photos
-{% include gallery caption="Photos of the project." %}
+<!-- ## Photos
+{% include gallery caption="Photos of the project." %} -->
 
 ## Contributions
 - Design and some assembly of Arduino prototype

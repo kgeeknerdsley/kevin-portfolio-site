@@ -2,6 +2,7 @@
 title: "Dino Tracker"
 excerpt: "A handheld device for learning and exploring in the world of dinosaurs"
 project_type: professional 
+order: 3
 header:
   teaser: /assets/images/dinoquest-bi/teaser.png
   overlay_image: /assets/images/dinoquest-bi/overlay.png
@@ -16,12 +17,15 @@ gallery:
   - url: /assets/images/dinoquest-bi/photo3.png
     image_path: /assets/images/dinoquest-bi/photo3.png
     alt: "photo 3"
+  - url: /assets/images/dinoquest-bi/photo4.png
+    image_path: /assets/images/dinoquest-bi/photo4.png
+    alt: "photo 4"
 ---
 
 ## Overview
 The Dino Tracker is part of the [Discovery Cube of Orange County's Dino Quest](https://www.discoverycube.org/orange-county/exhibits/dino-quest/) exhibit in Santa Ana, CA. I worked on this as the Lead Embedded Systems Engineer at [Beaudry Interactive](https://www.binteractive.com/post/dino-quest-re-imagined).
 
-Guests use the Dino Tracker to explore four interactive missions throughout the outdoor exhibit space. The device features a clear three-button interface, haptic feedback, and an RFID system that allows it to "scan" various graphic panels, as well as communicate wirelessly with the back-of-house game systems and show control.
+Guests use the Dino Tracker to explore four interactive missions throughout the outdoor exhibit space. The device features a clean three-button interface, haptic feedback, full color TFT display, and an RFID system that allows it to "scan" various graphic panels, as well as communicate wirelessly with the back-of-house game systems and show control.
 
 We produced 200 trackers for this exhibit!
 
@@ -30,10 +34,12 @@ We produced 200 trackers for this exhibit!
 
 ## Contributions
 - One of two hardware designers
+    - Produced multiple PCBs to satisfy device requirements, and fit within casing
 - Design and implementation of device firmware
     - Low-level device functions
     - High-level mission logic and graphics display
 - Device testing, installation and post-opening support
+    - Various upgrades to internal mechanics for stability
 
 ## Credits
 More about the full project on [Beaudry Interactive's website](https://www.binteractive.com/post/dino-quest-re-imagined).

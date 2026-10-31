@@ -2,20 +2,21 @@
 title: "Computer Vision Expression Detection and Classification"
 excerpt: "A custom CNN to detect and classify expressions"
 project_type: college 
-header:
-  teaser: /assets/images/seniorproj-cpp/teaser.png
-  overlay_image: /assets/images/seniorproj-cpp/overlay.png
-  overlay_filter: 0.3
-gallery:
-  - url: /assets/images/seniorproj-cpp/photo1.png
-    image_path: /assets/images/seniorproj-cpp/photo1.png
-    alt: "photo 1"
-  - url: /assets/images/seniorproj-cpp/photo2.png
-    image_path: /assets/images/seniorproj-cpp/photo2.png
-    alt: "photo 2"
-  - url: /assets/images/seniorproj-cpp/photo3.png
-    image_path: /assets/images/seniorproj-cpp/photo3.png
-    alt: "photo 3"
+order: 2
+# header:
+#   teaser: /assets/images/seniorproj-cpp/teaser.png
+#   overlay_image: /assets/images/seniorproj-cpp/overlay.png
+#   overlay_filter: 0.3
+# gallery:
+#   - url: /assets/images/seniorproj-cpp/photo1.png
+#     image_path: /assets/images/seniorproj-cpp/photo1.png
+#     alt: "photo 1"
+#   - url: /assets/images/seniorproj-cpp/photo2.png
+#     image_path: /assets/images/seniorproj-cpp/photo2.png
+#     alt: "photo 2"
+#   - url: /assets/images/seniorproj-cpp/photo3.png
+#     image_path: /assets/images/seniorproj-cpp/photo3.png
+#     alt: "photo 3"
 ---
 
 ## Overview
@@ -36,8 +37,8 @@ The system acquired facial data using the *dlib* library to detect expression pr
 
 I was responsible for all aspects of the neural network's training and execution, including the hardware that powered the model. I trained the model on the fer2013 facial dataset, using a model structure similar to VGG16. The training was accomplished via Tensorflow and Keras, in a Python environment. The model was converted into the TFLite execution format, and run on a Raspberry Pi Zero W, for smaller power consumption and physical footprint.
 
-## Photos
-{% include gallery caption="Photos of the project." %}
+<!-- ## Photos
+{% include gallery caption="Photos of the project." %} -->
 
 ## Contributions
 - Research and development of CNN

@@ -2,6 +2,7 @@
 title: "Personal Projects"
 excerpt: "A hodgepodge of interesting things!"
 project_type: personal 
+order: 1
 header:
   teaser: /assets/images/personal/teaser.png
   overlay_image: /assets/images/personal/overlay.png
