@@ -20,4 +20,4 @@ carousel:
 
 Hi there! Welcome to my site, where I love to show off the things I do!
 
-Take a look through the [Projects]({{ "/projects/" | relative_url }}) section and see some of the exciting experiences and programs I've supported, grab a copy of my [Resume]({{ "/resume/" | relative_url }}), or simply reach out and [Contact]({{ "/contact/" | relative_url }}) me. 
+Take a look through the [Projects]({{ "/projects/" | relative_url }}) section and see some of the exciting experiences and programs I've supported, learn a little more [About]({{ "/about/" | relative_url }}) me, grab a copy of my [Resume]({{ "/resume/" | relative_url }}), or simply reach out and [Contact]({{ "/contact/" | relative_url }}) me. 
