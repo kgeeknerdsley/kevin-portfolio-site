@@ -18,10 +18,10 @@ subtitle: Embedded Software and Hardware Engineer
 email: kevindworsley@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio site for Kevin Worsley
-#baseurl: "/kevin-portfolio-site" # the subpath of your site, e.g. /blog
-#url: "https://kgeeknerdsley.github.io/kevin-portfolio-site/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.kevinworsley.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/kevin-portfolio-site" # the subpath of your site, e.g. /blog
+url: "https://kgeeknerdsley.github.io/kevin-portfolio-site/" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://www.kevinworsley.com" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  kgeeknerdsley
 
