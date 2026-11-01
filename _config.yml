@@ -18,10 +18,12 @@ subtitle: Embedded Software and Hardware Engineer
 email: kevindworsley@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio site for Kevin Worsley
+# url is the host only (no path); baseurl is the path the site lives under.
 baseurl: "/kevin-portfolio-site" # the subpath of your site, e.g. /blog
-url: "https://kgeeknerdsley.github.io/kevin-portfolio-site/" # the base hostname & protocol for your site, e.g. http://example.com
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://www.kevinworsley.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kgeeknerdsley.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# When switching to the custom domain, use these instead:
+# baseurl: ""
+# url: "https://www.kevinworsley.com"
 #twitter_username: jekyllrb
 github_username:  kgeeknerdsley
 
